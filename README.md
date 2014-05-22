@@ -2,7 +2,7 @@
 
 subusch is a simple python program used from the command line which allows you to download subtitle files for your favorite TV Shows and Movies from different subtitle providers.
 
-This is a very early version.
+This is a very early version. Use at your own risk.
 
 ## Dependencies
 subusch requires at least python 3.4. You can download python from https://www.python.org/ for all major platforms (Windows, OSX, *nix and others)
@@ -49,3 +49,6 @@ optional arguments:
 
 ## Configuration
 Some default values like preferred language, preferred providers etc. can be set in the file config.py. Read the file carefully for instructions.
+
+##License
+subusch is licensed under the GNU/GPLv3 (GNU/General Public License ver.3). See the file LICENSE for the whole license.
