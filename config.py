@@ -27,7 +27,6 @@
 # Use this to set a proxy to connect to the subtitle providers.
 # Useful if you are behind a firewall (in case you like watching
 # your episodes at work and you want your subtitles :-) )
-# HTTP_PROXY = 'cie-vproxy.cie.etat.lu:8080'
 HTTP_PROXY = ''
 
 # The file extensions for which the filesystem should be scanned.
@@ -52,7 +51,7 @@ PREFERRED_LANG = 'en,fr'
 #
 # TSDB = TheSubDB --> www.thesubdb.com
 # OST = OpenSubTitles --> www.opensubtitles.org (provider not yet implemented)
-PROVIDERS = 'ost'
+PROVIDERS = 'tsdb,ost'
 
 # Specify the location of the logfile.
 LOG_FILE = 'subusch.log'
