@@ -2,15 +2,26 @@
 
 subusch is a simple python program used from the command line which allows you to download subtitle files for your favorite TV Shows and Movies from different subtitle providers.
 
-This is a very very early version.
+This is a very early version.
+
+## Dependencies
+subusch requires at least python 3.4. You can download python from https://www.python.org/ for all major platforms (Windows, OSX, *nix and others)
+
+For Linux users, check your distros package manager for a precompiled package of python 3.4.
+
+No other dependencies are required.
 
 ## Supported providers
-Currently, only [TheSubDb](http://www.thesubdb.com) is supported.
-
-Other providers are in planification
+Currently supported:
+- [TheSubDb](http://www.thesubdb.com).
+- [Opensubtitles](http://www.opensubtitles.org) (only partially implemented)
+Other providers are planned.
 
 ## Usage
-Just run subusch.py from the command line. To get help, specify the -h or --help switch
+Just run subusch.py 'path' from the command line. If 'path' is a directory, subusch will search for subtitles for every video file inside 'path'. 
+If 'path' is a file, subusch will download subtitles just for that file and ignore the -r switch (recursive scanning of directories)
+
+To get help, specify the -h or --help switch
 ```
 python subusch.py -h
 ```
@@ -35,3 +46,6 @@ optional arguments:
   -f, --force           Forces the download of subtitles, even if they are
                         already present on the filesystem
 ```
+
+## Configuration
+Some default values like preferred language, preferred providers etc. can be set in the file config.py. Read the file carefully for instructions.
